@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-gray: #363636;
+    --medium-gray: #787878;
+    --light-gray: #BABABA;
+    --white-color: #FFFFFF;
+    --blue-color: #4C7EF6;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/Poppins-Medium.ttf);
+}
+
+body,
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #bdc5d8;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 40%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem 3rem;
+    background-color: var(--white-color);
+    font-family:poppins;
+    border: 2px dotted var(--dark-gray);
+    font-size: 1.7rem;
+}
+
+.row {
+    display: flex;
+}
+
+.menu-button {
+    margin-bottom: 2rem;
+    padding:0 2.5rem;
+}
+
+.add-task-container{
+    padding:0 2.5rem;
+}
+
+.add-task {
+    width: 100%;
+    height: 5.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--light-gray);
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+    transition: all .5s;
+    outline: 0px;
+}
+
+.add-task:hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--dark-gray);
+    border-radius: 0;
+}
+
+#task-input {
+    background-image: url('../images/placeholder\ image.png');
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: 1.5rem 50%;
+    padding-left: 5rem;
+}
+
+.add-task::placeholder {
+    color: var(--light-gray);
+    font-weight: 500;
+    font-size: 1.8rem;
+    font-family: poppins;
+}
+
+.menu {
+    align-items: center;
+}
+
+.menu li {
+    padding-right: 2.4rem;
+    /* padding-left: 1.2rem; */
+    font-weight: 600;
+}
+
+.menu li a {
+    color: var(--medium-gray);
+    transition: all .3s;
+    padding: .4rem .2rem;
+    border-bottom: 1.5px solid transparent;
+}
+
+.menu li a:hover {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+.selected-status{
+    color: var(--blue-color) !important;
+    border-color: var(--blue-color)!important;
+}
+
+.button {
+    margin-left: auto;
+    color: var(--white-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: var(--blue-color);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    transition: all .3s;
+}
+
+.button:hover {
+    transform: scale(1.03);
+    background-color: rgb(7, 7, 197);
+}
+
+.checkbox {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.lastcheckbox,
+.checkbox {
+    padding: 2.5rem 0;
+    color: var(--dark-gray);
+    font-weight: 600;
+}
+
+.checkbox a,.lastcheckbox a{
+    font-weight:bolder;
+    font-size:2.2rem;
+    letter-spacing: .15rem;
+    margin-top: -0.6rem;  
+    transition:all .3s; 
+}
+
+.checkbox a:hover ,.lastcheckbox a:hover{
+    color:var(--blue-color);
+}
+
+.border-bottom-top {
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+    margin-bottom: 3rem;
+    padding:0 2.5rem;
+}
+
+.checkbox-text {
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+.border-bottom-top a {
+    float: right;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+.hide{
+    display:none;
+}

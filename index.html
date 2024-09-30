@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" href="assets/images/vecteezy_clipboard-and-check-marks-flat-style-design-vector_6900654.jpg">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="add-task-container">
+            <input type="text" class="add-task" placeholder="Add a new task" id="task-input">
+        </div>
+        <div class="row menu-button">
+            <ul class="menu row">
+                <li><a onclick="onClickAllStatus(this)" class="selected-status" href="#">All</a></li>
+                <li><a onclick="onClickPending(this)" href="#">Pending</a></li>
+                <li><a onclick="onClickCompleted(this)" href="#">Completed</a></li>
+            </ul>
+            <button class="button">Clear All</button>
+        </div>
+        <div class="border-bottom-top">
+            <ul id="list-wrapper">
+                <!-- <li class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Renew gym membership</div>
+                        <a href="#">...</a>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Create a video for YouTube</div>
+                        <a href="#">...</a>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox">
+                        <div class="checkbox-text">Write a blog about new trends</div>
+                        <a href="#">...</a>
+                    </li>
+                    <li class="checkbox">
+                        <input type="checkbox" >
+                        <div class="checkbox-text">Send project file to the client</div>
+                        <a href="#">...</a>
+                    </li>
+                    <li class="lastcheckbox">
+                        <input type="checkbox" >
+                        <div class="checkbox-text">Discuss new project with team</div>
+                        <a href="#">...</a>
+                    </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
